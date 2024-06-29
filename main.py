@@ -3,6 +3,7 @@ import sys
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
+from ttkthemes import ThemedTk
 
 # Global variables
 inventory = []
@@ -123,13 +124,13 @@ def main():
 
     # Creates GUI for the app
     # Main Window
-    window = tk.Tk()
+    window = ThemedTk(theme="breeze")
     window.title("Shop Management System")
     window.configure(borderwidth=10)
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
-    window_width = 370
-    window_height = 450
+    window_width = 350
+    window_height = 470
     x = (screen_width // 2) - (window_width // 2)
     y = (screen_height // 2) - (window_height // 2)
     # Placing window in the center of the screen
@@ -137,15 +138,15 @@ def main():
 
     # Adding other GUI components, using grid as a layout
 
-    aisle_label = tk.Label(window, text="Please enter the aisle number:")
+    aisle_label = ttk.Label(window, text="Please enter the aisle number:")
     aisle_label.grid(row=0, column=0, sticky="W", pady=5)
-    aisle_number = tk.Entry(window, width=10)
+    aisle_number = ttk.Entry(window, width=10)
     aisle_number.grid(row=1, column=0, sticky="W", pady=5)
 
-    display_button = tk.Button(window, text="Display Items", command=on_display_button_click)
+    display_button = ttk.Button(window, text="Display Items", command=on_display_button_click)
     display_button.grid(row=1, column=1, pady=5, sticky="W")
 
-    aisle_label = tk.Label(window, text="Products in the aisle:")
+    aisle_label = ttk.Label(window, text="Products in the aisle:")
     aisle_label.grid(row=2, column=0, sticky="W", pady=5)
 
     # Displaying the products from the specified aisle in the neat format
@@ -158,19 +159,19 @@ def main():
     aisle_products.column("Stock", width=100, anchor="center")
     aisle_products.grid(row=3, column=0, columnspan=2, sticky="W", pady=5)
 
-    item_label = tk.Label(window, text="Please enter the name of the product:")
+    item_label = ttk.Label(window, text="Please enter the name of the product:")
     item_label.grid(row=4, column=0, sticky="W", pady=5)
-    product_entry = tk.Entry(window)
+    product_entry = ttk.Entry(window)
     product_entry.grid(row=5, column=0, sticky="W", pady=5)
 
-    add_button = tk.Button(window, text="Add to Cart", command=on_add_button_click)
+    add_button = ttk.Button(window, text="Add to Cart", command=on_add_button_click)
     add_button.grid(row=5, column=1, pady=5, sticky="W")
 
-    view_cart_button = tk.Button(window, text="View Cart", command=on_view_cart_button_click)
-    view_cart_button.grid(row=6, column=0, pady=5)
+    view_cart_button = ttk.Button(window, text="View Cart", command=on_view_cart_button_click)
+    view_cart_button.grid(row=6, column=0, pady=5, sticky="W")
 
-    cancel_order_button = tk.Button(window, text="Cancel Order", command=on_cancel_order_button_click)
-    cancel_order_button.grid(row=6, column=1, pady=5)
+    cancel_order_button = ttk.Button(window, text="Cancel Order", command=on_cancel_order_button_click)
+    cancel_order_button.grid(row=6, column=1, pady=5, sticky="W")
 
     window.mainloop()
 
