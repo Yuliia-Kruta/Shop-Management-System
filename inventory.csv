@@ -1,0 +1,60 @@
+Item,Price,Aisle,Stock
+Apple,1.99,1,1
+Banana,0.99,1,5
+Orange,1.49,1,0
+Mango,2.99,2,0
+Big Mango,4.00,2,1
+Strawberry,2.49,3,4
+Grapes,1.79,3,0
+Pineapple,3.49,4,2
+Watermelon,4.99,4,3
+Peach,1.99,5,4
+Pear,1.49,5,1
+Lettuce,1.29,6,7
+Tomato,0.79,Vegetables,3
+Cucumber,0.99,6,5
+Lettuce,1.29,6,7
+Tomato 2,0.79,6,3
+Cucumber 2,0.99,6,5
+Lettuce 2,1.29,6,7
+Tomato 3,0.79,6,3
+Cucumber 3,0.99,6,5
+Lettuce 3,1.29,6,7
+Tomato 4,0.79,6,3
+Cucumber 4,0.99,6,5
+Lettuce 4,1.29,6,7
+Tomato 5,0.79,6,3
+LastCucumber,0.99,6,5
+Carrot,0.69,7,9
+Broccoli,1.49,7,3
+Cauliflower,1.99,7,2
+Potato,0.89,8,12
+Onion,0.59,8,8
+Garlic,0.79,8,6
+Bell Pepper,0.99,9,5
+Spinach,1.29,9,3
+Cabbage,0.79,9,3
+Chicken Breast,4.99,10,6
+Ground Beef,3.49,10,4
+Salmon Fillet,5.99,11,3
+Tuna Steak,6.49,11,2
+Shrimp,7.99,11,1
+Milk,2.49,12,8
+Eggs,1.99,12,9
+Butter,2.99,12,6
+Yogurt,1.79,13,5
+Cheese,3.99,13,4
+Bread,1.49,14,7
+Bagels,1.99,14,4
+Rice,2.99,15,8
+Pasta,1.49,15,6
+Flour,1.99,15,5
+Sugar,1.29,16,4
+Salt,0.99,16,5
+Pepper,1.49,16,6
+Coffee,4.99,17,3
+Tea,2.49,17,5
+Juice,2.99,18,4
+Soda,1.99,18,5
+Cake,5,19,6
+Water,0.99,18,9
