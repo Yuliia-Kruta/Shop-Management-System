@@ -3,7 +3,8 @@
 <img align="left" src="./shop-management-system.gif" width="30%" height="auto"/>
 <br/>
 <br/>
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
+
 <h2>Project description</h2>
 The Shop Management App is a Python-based GUI application designed to manage shop inventory and customer carts. 
 
